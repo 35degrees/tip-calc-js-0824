@@ -12,13 +12,6 @@ const output1 = document.querySelector('.tip-amount-display')
 const output2 = document.querySelector('.total-amount-display')
 const resetBtn = document.querySelector('.reset-button')
 
-const option1 = document.getElementById('num1')
-const option2 = document.getElementById('num2')
-const option3 = document.getElementById('num3')
-const option4 = document.getElementById('num4')
-const option5 = document.getElementById('num5')
-const option6 = document.getElementById('num6')
-
 function calculate() {
 	if (billValue > 0 && peopleValue >= 1 && tipValue > 0) {
 		output1.textContent = `$${((billValue * tipValue) / peopleValue).toFixed(

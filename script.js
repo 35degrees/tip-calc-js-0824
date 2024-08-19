@@ -12,6 +12,8 @@ const output1 = document.querySelector('.tip-amount-display')
 const output2 = document.querySelector('.total-amount-display')
 const resetBtn = document.querySelector('.reset-button')
 
+const option3 = document.getElementById('num3')
+
 function calculate() {
 	if (billValue > 0 && peopleValue >= 1 && tipValue > 0) {
 		output1.textContent = `$${((billValue * tipValue) / peopleValue).toFixed(
@@ -29,8 +31,8 @@ function calculate() {
 
 function reset() {
 	tipValue = 0.15
-	billValue = ''
-	peopleValue = ''
+	billValue = 0
+	peopleValue = 0
 	billInput.value = ''
 	peopleInput.value = ''
 	option3.checked = true

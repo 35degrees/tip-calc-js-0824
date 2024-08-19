@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+    <main id="main-container">
+      <h1 class="title">SPLI<br>TTER</h1>
+    
+    
+      <div class="calc-container">
+    
+        <div class="calc-input">
+          <section id="bill">
+            <div class="bill-text">
+              <h3>Bill</h3>
+              <h3 class="bill-warning">Enter numbers only.</h3>
+              <div class="emoji">﹩</div>
+            </div>
+            <form>
+              <input class='bill-input' type="text" placeholder="0" maxlength=4 max=9999 />
+            </form>
+          </section>
+    
+          <section id="tip">
+            <div class="tip-text">
+              <h3>Select Tip %</h3>
+   
+            </div>
+            <ul class="tip-list">
+              <li>
+                <input type="radio" id="num1" name="tip-pct" class="largerCheckbox" value="0.05" />
+                <label for="num1">5%</label>
+              </li>
+              <li>
+                <input type="radio" id="num2" name="tip-pct" class="largerCheckbox" value="0.1" />
+                <label for="num2">10%</label>
+              </li>
+              <li>
+                <input type="radio" id="num3" name="tip-pct" class="largerCheckbox" value="0.15" checked />
+                <label for="num3">15%</label>
+              </li>
+              <li>
+                <input type="radio" id="num4" name="tip-pct" class="largerCheckbox" value="0.25"  />
+                <label for="num4">25%</label>
+              </li>
+              <li>
+                <input type="radio" id="num5" name="tip-pct" class="largerCheckbox" value="0.4" />
+                <label for="num5">40%</label>
+              </li>
+              <li>
+                <input type="radio" id="num6" name="tip-pct" class="largerCheckbox" value="0.5"  />
+                <label for="num6">50%</label>
+              </li>
+            </ul>
+          </section>
+    
+          <section id="people">
+            <div class="people-text">
+              <h3>Number of People</h3>
+              <h3 class="people-warning">Can't be zero or text.</h3>
+              <div class="emoji">👫</div>
+            </div>
+            <form>
+              <input class='people-input' type="text" placeholder="0" maxlength=3  />
+            </form>
+          </section>
+        </div>
+    
+    
+    
+        <div class="calc-output">
+          <div class="tip-amount">
+            <div class="tip-amount-text">
+              <h3>Tip Amount</h3>
+              <p>/ person</p>
+            </div>
+    
+            <div class="tip-amount-output">
+             <h1 class="tip-amount-display">
+    
+             </h1>
+            </div>
+    
+          </div>
+          <div class="total-amount">
+    
+          <div class="total-amount-text">
+            <h3>Total Amount</h3>
+            <p>/ person</p>
+          </div>
+    
+          <div class="total-amount-output">
+            <h1 class="total-amount-display"></h1>
+          </div>
+    
+          </div>
+    
+          <div class="reset-button">Reset</div>
+        </div>
+    
+    </main>
+  </body>
+</html>
